@@ -1,0 +1,32 @@
+Router 1:
+router eigrp 100
+ variance 2
+ passive-interface Loopback0
+ network 10.0.0.0
+ network 1.1.1.1 0.0.0.0
+ no auto-summary
+
+
+Router 2:
+router eigrp 100
+ passive-interface Loopback0
+ network 10.0.0.0
+ network 2.2.2.2 0.0.0.0
+ no auto-summary
+
+
+Router 3:
+router eigrp 100
+ passive-interface Loopback0
+ network 10.0.0.0
+ network 3.3.3.3 0.0.0.0
+ no auto-summary
+
+
+Router 4:
+router eigrp 100
+ passive-interface Loopback0
+ network 10.0.0.0
+ network 4.4.4.4 0.0.0.0
+ network 192.168.4.0
+ no auto-summary
